@@ -1,0 +1,33 @@
+Require bower
+Require express.js
+Require jquery
+#################################
+First we do bower init
+Bower install jquery –save (fills the library)
+Bower\components contains the jquery
+--save (populates the json)
+###################################################################################################
+We are going to take care of the server side services by using npm 
+We will do npm install express.js like this
+Then npm install express socket.io moment –save , then we do npm init that makes a package json to keep our libraries 
+###################################################################################################
+
+-2 directories –client side and server side
+-Server/server.js
+-Client/client.js
+-Client/style.css
+-Clinet/script.js
+
+#################################
+
+var app = require(‘express’)
+var http = require('http').Server(app);
+var io = require('socket.io');
+
+#################################
+
+http.listen(port, function(){
+		console.log('can't see + port');
+});
+
+
